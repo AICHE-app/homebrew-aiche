@@ -35,9 +35,7 @@ cask "aiche-desktop" do
   caveats <<~EOS
     AICHE Desktop requires accessibility permissions for global hotkeys.
     
-    On first launch:
-    1. Grant accessibility permissions when prompted
-    2. Use ⌘+⇧+R to start/stop recording
-    3. Use ⌘+⇧+H to show history
+    On first launch, grant accessibility permissions when prompted.
+    Check the app for current hotkey bindings.
   EOS
 end

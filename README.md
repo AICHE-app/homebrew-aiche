@@ -16,10 +16,9 @@ AICHE Desktop is an AI-powered audio transcription and enhancement application f
 ## Features
 
 - 🎤 Real-time audio recording and transcription
-- ⌨️ Global hotkeys (⌘+⇧+R to record, ⌘+⇧+H for history)
+- ⌨️ Global hotkeys (check app for current bindings)
 - 🤖 AI-powered text enhancement
 - 🔒 Privacy-focused with local processing
-- 📱 Seamless sync with mobile app
 
 ## Uninstall
 
