@@ -27,13 +27,12 @@ cask "aiche-desktop" do
   # Main app
   app "AICHE Desktop.app"
 
-  # Post-install: Remove quarantine to avoid Gatekeeper (not needed - already notarized)
-  # Keeping this commented out as the DMG is properly signed and notarized
-  # postflight do
-  #   system_command "/usr/bin/xattr",
-  #                  args: ["-rd", "com.apple.quarantine", "#{appdir}/AICHE Desktop.app"],
-  #                  sudo: false
-  # end
+  # Pre-install: Remove older version to allow seamless updates without --force flag
+  preflight do
+    system_command "/bin/rm",
+                   args: ["-rf", "/Applications/AICHE Desktop.app"],
+                   sudo: false
+  end
 
   # Cleanup on uninstall
   zap trash: [
