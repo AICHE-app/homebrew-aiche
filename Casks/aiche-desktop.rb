@@ -27,12 +27,8 @@ cask "aiche-desktop" do
   # Main app
   app "AICHE Desktop.app"
 
-  # Pre-install: Remove older version to allow seamless updates without --force flag
-  preflight do
-    system_command "/bin/rm",
-                   args: ["-rf", "/Applications/AICHE Desktop.app"],
-                   sudo: false
-  end
+  # Uninstall handler - removes app on upgrade/reinstall
+  uninstall delete: "/Applications/AICHE Desktop.app"
 
   # Cleanup on uninstall
   zap trash: [
