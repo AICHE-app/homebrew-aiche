@@ -1,15 +1,15 @@
 cask "aiche-desktop" do
-  version "1.1.2"
+  version "1.2.0"
 
   # Architecture-specific downloads
   on_arm do
-    sha256 "10fc291c29dee2d9259ac55eee07bc76ce412e8533c8880c87bb5c1b68d11b73"
+    sha256 "8a29309dc2596a473c179a0e72d91775bb1e32437ca5ac1f9dd91d22c6f1c203"
     url "https://github.com/AICHE-app/mac-releases/releases/download/v#{version}/AICHE-Installer-#{version}-ARM64.dmg",
         verified: "github.com/AICHE-app/mac-releases/"
   end
 
   on_intel do
-    sha256 "51cce4c690fc60a7e7a34ceeeecfb72b4a472ba7ac3bb345df006a8fca5ffeb2"
+    sha256 "6d2f95502b5e0ae0fdc86e1e9b891a60cc0255cdd7605b147baa51b73e369a81"
     url "https://github.com/AICHE-app/mac-releases/releases/download/v#{version}/AICHE-Installer-#{version}-Intel.dmg",
         verified: "github.com/AICHE-app/mac-releases/"
   end
